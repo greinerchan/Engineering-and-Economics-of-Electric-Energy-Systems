@@ -1,0 +1,10 @@
+p1=1; p2=1;
+for i=1:1:busNum*2
+    if mod(i,2)
+        deta_PQ(i,1) = initial_deltaP(p1,1);
+        p1=p1+1;
+    else
+        deta_PQ(i,1) = initial_deltaQ(p2,1);
+        p2=p2+1;
+    end
+end
